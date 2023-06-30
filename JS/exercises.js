@@ -136,10 +136,13 @@
     // console.log("Darth Vaders is a Jedi?", darthVader.allegiance ? "FALSE" :"TRUE");
 
 // Exercise 14
-    console.log("Exercise 14 answers:");
-    let myArray = ["hello","everyone"]
-    console.log(myArray.length);
-    myArray.push("my","name","is","Nay");
-    console.log(myArray.length);
-    myArray.shift();
-    console.log(myArray.length);
+    // console.log("Exercise 14 answers:");
+    // let myArray = ["hello","everyone"]
+    // console.log(myArray.length);
+    // myArray.push("my","name","is","Nay");
+    // console.log(myArray.length);
+    // myArray.shift();
+    // console.log(myArray.length);
+    // for( let x of myArray) {
+    //     console.log(x);
+    // }
