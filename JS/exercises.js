@@ -133,7 +133,7 @@
     // console.log("Darth Vaders allegiance is to the", darthVader.allegiance);
     // console.log("Darth Vaders weapon of choice is ", darthVader.weapon);
     // console.log("Darth Vaders is a sith?", darthVader.sith ? "TRUE" :"FALSE");
-    // console.log("Darth Vaders is a Jedi?", darthVader.allegiance ? "FALSE" :"TRUE");
+    // console.log("Darth Vaders is a Jedi?", darthVader.sith == "Jedi" ? "FALSE" :"TRUE");
 
 // Exercise 14
     // console.log("Exercise 14 answers:");
@@ -143,6 +143,6 @@
     // console.log(myArray.length);
     // myArray.shift();
     // console.log(myArray.length);
-    // for( let x of myArray) {
+    // for(let x of myArray) {
     //     console.log(x);
     // }
