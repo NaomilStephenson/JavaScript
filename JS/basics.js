@@ -8,7 +8,7 @@ let x = 1;
 
  console.log ( y );
 
- let srting = "Test";
+ let string = "Test";
  let number = 9;
  let animal = { animal: "cat", called: "Skye" };
  
@@ -22,6 +22,17 @@ let x = 1;
 
  console.log (houseno + street);
 
+ console.log(string);
+ console.info(string);
+ console.warn(string);
+ console.error(string);
+
  //.methodName() = method
  //           {} = object
  //           [] = array
+
+
+ //template literal
+ // \n is newline
+ // \\ = \
+ // \"quotes\" - insert quote
