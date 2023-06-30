@@ -126,11 +126,20 @@
     // console.log( confirm );
 
 // Exercise 13
-    console.log("Exercise 13 answers:");
-    let dvName = "Darth Vader";
-    let darthVader = { allegiance: "Empire", weapon: "lightsabre", sith:true};
+    // console.log("Exercise 13 answers:");
+    // let dvName = "Darth Vader";
+    // let darthVader = { allegiance: "Empire", weapon: "lightsabre", sith:true};
     // console.log(darthVader);
-    console.log("Darth Vaders allegiance is to the", darthVader.allegiance);
-    console.log("Darth Vaders weapon of choice is ", darthVader.weapon);
-    console.log("Darth Vaders is a sith?", darthVader.sith ? "TRUE" :"FALSE");
-    console.log("Darth Vaders is a Jedi?", darthVader.allegiance ? "FALSE" :"TRUE");
+    // console.log("Darth Vaders allegiance is to the", darthVader.allegiance);
+    // console.log("Darth Vaders weapon of choice is ", darthVader.weapon);
+    // console.log("Darth Vaders is a sith?", darthVader.sith ? "TRUE" :"FALSE");
+    // console.log("Darth Vaders is a Jedi?", darthVader.allegiance ? "FALSE" :"TRUE");
+
+// Exercise 14
+    console.log("Exercise 14 answers:");
+    let myArray = ["hello","everyone"]
+    console.log(myArray.length);
+    myArray.push("my","name","is","Nay");
+    console.log(myArray.length);
+    myArray.shift();
+    console.log(myArray.length);
