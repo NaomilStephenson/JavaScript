@@ -36,3 +36,6 @@ let x = 1;
  // \n is newline
  // \\ = \
  // \"quotes\" - insert quote
+
+ // || = or
+ // && = and
