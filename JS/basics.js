@@ -287,3 +287,17 @@ let alphabet = '';
 
     console.log(greetings(`hi`));
     console.log(query("Who","Me"));
+
+// SCOPE
+
+    var scopex;                 // Historical - DO NOT USE!! not Secure & will not account for Scope!
+
+    // Local
+        // variables declard inside a code block have thier scope limited to that block
+    
+    // GLOBAL
+        // 1 - Outside a Code Block
+        // 2 - Automatically set as Global, can occur in Functions - example below (message) - will not work with Strict!
+
+            let greeting = x => message = x;        
+            console.log(greetings(`hi`));
