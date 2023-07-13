@@ -9,18 +9,19 @@ which allows us to manipulate it.
 
 // Declare variables from the DOM
 
-const pageInput = document.getElementById('textInput');
-const pageButton = document.getElementById('btn');
-const pageParagraph = document.getElementById('textOutput');
-
-let display = str => pageParagraph.innerText = `${str}`;
-
-pageButton.onclick = () => display(pageInput.value);
-
+const pageInput = document.getElementById("textInput");
+const pageButton = document.getElementById("btn");
+const pageParagraph = document.getElementById("textOutput");
 const pageList = document.getElementById('myList');
 
-let addToList = str => {
-    let el = documemt.createElement('li');
-    el.innerText = str;
-    pageList.appendChild(el);
+let addToList = value => {
+    let listItem = document.createElement('li');
+    listItem.innerText = value;
+    pageList.appendChild(listItem);
+};
+
+pageButton.onclick =()=> {
+    pageParagraph.innerText= `Added "${pageInput.value}" to the list`;
+    addToList(pageInput.value);
+    console.log(`Added ${pageInput.value} to the list`);
 };
