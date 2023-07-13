@@ -1,12 +1,12 @@
 console.log("Hello World");
 
-// let x = 1;
-//  console.log( x+1 );
-//  console.log( x*5 );
+let x = 1;
+ console.log( x+1 );
+ console.log( x*5 );
 
-//  let y = "Hello World";
+ let y = "Hello World";
 
-//  console.log ( y );
+ console.log ( y );
 
  let string = "Test";
  let number = 9;
@@ -17,30 +17,26 @@ console.log("Hello World");
  let array = [1,2,3,4,5,6,7,8,9];
  console.log(array);
 
- let houseno = 15; //Local vairables
- var street =" St Josephs Way"; // Global variables
+ let houseno = 15;                          // Local vairables
+ var street =" St Josephs Way";             // Global variables
 
  console.log (houseno + street);
 
- console.log(string);
- console.info(string);
- console.warn(string);
- console.error(string);
 
- //.methodName() = method
- //           {} = object
- //           [] = array
+ .methodName() = method
+           {} = object
+           [] = array
 
 
- //template literal
- // \n is newline
- // \\ = \
- // \"quotes\" - insert quote
+//  template literal
+//  \n is newline
+//  \\ = \
+//  \"quotes\" - insert quote
 
- // || = or
- // && = and
+//  || = or
+//  && = and
 
- //From Cameron:
+ // From Cameron:
 
  'use strict';
 /*
@@ -105,19 +101,19 @@ console.log(calc);
 
 // CONDITIONALS
 
-// FALSEY
-/*
-    false
-    0
-    ''
-    ``
-    ""
-    undefined
-    null
-    NaN (Not a number)
-*/
+    // FALSEY
+    /*
+        false
+        0
+        ''
+        ``
+        ""
+        undefined
+        null
+        NaN (Not a number)
+    */
 
-// Everything else is TRUTHY => IF Statement
+    // Everything else is TRUTHY => IF Statement
 
 let x = '';
 if (x){
@@ -136,12 +132,12 @@ if(y==2) {
     console.log(`y is not 2`);
 };
 
-// and becomes:
+// // and becomes:
 
 let z = 4;
 z == 4 ? console.log(`z is 4`) : console.log(`z is not 4`);
 
-// Mutation of Data Types
+// // Mutation of Data Types
 
 if (1 == `1`) {
     console.log(`Mutated`);
@@ -151,3 +147,143 @@ console.log (`is the number ${1} the same value and data type as string "1"? `)
 1 === `1` ? console.log(`TRUE`) : console.log(`FALSE`);
 
 
+// // Objects
+
+    // legacy method
+
+    let animal = new Object();
+
+    animal["name"] = "Clifford";
+    animal["type"] = "Dog";
+    animal["size"] = "Big";
+    console.log(animal);
+
+    console.colour = "Red";
+    console.log(animal);
+
+    // New 'lieteral' method
+
+    let vehicle = {
+        "type": "Bike",
+        "seats": 1,
+        "wheels": 2
+    };
+
+    console.log(vehicle);
+    console.log(vehicle.type);
+
+    let garage = [
+        vehicle,
+        {
+            "type": "Car",
+            "seats": 5,
+            "wheels": 4
+        }
+    ];
+
+    console.log(garage);
+
+// Looping through Arrays
+
+let myArray = ['a','b','c','d','e'];
+let alphabet = '';
+
+    // Traditional for loop
+
+        for (let i=0; i< myArray.length; i++) {
+            console.log(`Adding ${myArray[i]} to the alphabet`);
+            alphabet += myArray[i] + " ";
+        };
+
+    // Enhanced for loop
+
+        for (let item of myArray){  //same as previous version
+            console.log(item);
+        };
+
+    // Array Object Methods
+
+        console.log(myArray.reverse());         // Reverses the array
+        console.log(myArray.join(" > "));     // Converts an array into a string
+    
+// JSON - Java Script Object Notation
+
+    let newJSON = {
+        "name"  :   "Naomi",                     // must have "" around the keys!!!
+        "age"   :   38
+    };
+
+    // stored like a string:
+
+        let myJSONString = '{"name" : "Naomi", "age" : 38}';
+    
+    // Stringify = JSON to String
+
+        console.log("Converting JSON to String");
+        let strJSON = JSON.stringify(newJSON);
+        console.log(strJSON);
+    
+    // PARSING = String to JSON
+
+        console.log("Converting String to JSON");
+        let jsonStr = JSON.parse(strJSON);
+        console.log(jsonStr);
+
+// Functions
+
+    function hello(who) {                       // Set up function (with argument)
+        console.log("Hello", who);
+    };
+
+    hello("Naomi");                             // Call the function
+    hello("Dean");
+
+    // Returns
+
+    let bye = false;
+    function goodbye() {
+        console.log("Goodbye");
+        return bye = true;                      // will stop the code - so should be placed at the end!
+    }
+
+    goodbye();
+    console.log(bye);
+
+    // Variable returns
+
+    function sum(a,b){
+        return a+b;
+    };
+
+    console.log(sum(51,5));
+
+    // Arrow Functions
+
+    function greeting(message){
+        return message;
+    }
+
+    // 1 - Drop the function keyword & Add '=' + '=>'
+
+    greeting = message => {                                         // singular argument
+        return message;
+    }
+
+    query = (question,answer) => {                                  // multiple argument
+        return question + answer;
+    }
+
+    // 2 - Drop the Return, remove brackets {}
+
+    greeting = message =>                                           // singular argument
+        message;
+    query = (question,answer) =>                                    // multiple argument
+        question + answer;
+
+    // 3 - Assign to a let & move to a single line
+
+    let greeting = message => message;                              // singular argument
+    let query = (question,answer) => question + answer;             // multiple argument
+
+    console.log(greetings(`hi`));
+    console.log(query("Who","Me"));
